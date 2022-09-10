@@ -1,0 +1,72 @@
+import {StyleSheet} from 'react-native';
+export const styles = StyleSheet.create({
+  borderWidth: {
+    width: '90%',
+    borderWidth: 1,
+    borderColor: 'grey',
+    borderRadius: 5,
+    alignSelf: 'center',
+    padding: 16,
+    marginBottom: 16,
+  },
+  productView: {
+    flexDirection: 'row',
+    marginTop: 16,
+    flex: 1,
+  },
+  headerText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  buttonView: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  addProductButton: {
+    padding: 4,
+    marginTop: 20,
+    width: '40%',
+    marginRight: 8,
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: 'green',
+    alignItems: 'center',
+  },
+  addCategoryButton: {
+    padding: 4,
+    marginTop: 20,
+    width: '30%',
+    marginRight: 8,
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: '#111111',
+    alignItems: 'center',
+  },
+  removeCategoryButton: categories => ({
+    padding: 4,
+    width: '40%',
+    marginRight: 8,
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: categories.length === 1 ? 'grey' : 'red',
+    alignItems: 'center',
+  }),
+  buttonHeaderView: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  removeText: categories => ({color: categories.length === 1 ? 'grey' : 'red'}),
+  addButtonText: {color: 'green'},
+  addNewCategoryButton: {
+    width: '90%',
+    alignItems: 'center',
+    backgroundColor: '#1953DF',
+    alignSelf: 'center',
+    paddingVertical: 16,
+    borderRadius: 4,
+  },
+  addNewCategoryButtonText: {
+    color: 'white',
+    fontSize: 16,
+  },
+});
